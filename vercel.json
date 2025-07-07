@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend",
+      "use": "@vercel/static-build",
+      "config": {}
+    },
+    {
+      "src": "backend",
+      "use": "@vercel/node-server",
+      "config": {}
+    }
+  ]
+}
+```
+
+This configuration tells Vercel to build the frontend using the `@vercel/static-build` plugin and the backend using the `@vercel/node-server` plugin.
+
+That's it! You can now deploy your app to Vercel using the `vercel` command.
